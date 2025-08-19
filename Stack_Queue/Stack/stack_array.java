@@ -13,6 +13,9 @@ public class stack_array {
         s.peek();
         System.out.println(s.pop());
         s.peek();
+        s.size();
+        System.out.println(s.pop());
+        s.size();
     }
 }
 class Stack{
@@ -43,4 +46,11 @@ class Stack{
                 System.out.println(arr[top]);
             }
         }
+        void size(){
+            if(isEmpty()){
+                System.out.println("Stack is empty");
+            }else{
+                System.out.println("Size of stack is: " + (top + 1));
+        }
     }
+}
