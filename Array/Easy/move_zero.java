@@ -1,0 +1,22 @@
+public class move_zero {
+    public void moveZeroes(int[] nums) {
+        int p=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+                nums[p++]=nums[i];
+            }
+        }
+        for(int i=p;i<nums.length;i++){
+            nums[i]=0;
+        }
+        return;
+    }
+    public static void main(String[] args) {
+        move_zero obj=new move_zero();
+        int[] nums={0,1,0,3,12};
+        obj.moveZeroes(nums);
+        for(int i:nums){
+            System.out.print(i+" ");
+        }
+    }
+}
