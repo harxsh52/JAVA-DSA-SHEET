@@ -16,4 +16,13 @@ public class rotate {
         }
         return ;
     }
+    public static void main(String[] args) {
+        rotate obj = new rotate();
+        int[] nums = {1,2,3,4,5,6,7};
+        int k = 3;
+        obj.rotate(nums,k);
+        for(int num: nums){
+            System.out.print(num + " ");
+        }
+    }
 }
