@@ -1,4 +1,4 @@
-package String.Medium;
+package String.Easy;
 
 public class anagram {
     public boolean isAnagram(String s, String t) {

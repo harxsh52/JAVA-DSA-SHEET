@@ -1,4 +1,4 @@
-package String.Medium;
+package String.Easy;
 
 public class rotate {
     public boolean rotateString(String s, String goal) {
