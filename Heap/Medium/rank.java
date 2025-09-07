@@ -1,4 +1,4 @@
-package Heap.Easy;
+package Heap.Medium;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 public class rank {

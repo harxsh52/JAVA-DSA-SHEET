@@ -1,4 +1,4 @@
-package Heap.Easy;
+package Heap.Medium;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

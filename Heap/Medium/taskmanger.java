@@ -1,4 +1,4 @@
-package Heap.Easy;
+package Heap.Medium;
 
 public class taskmanger {
     public int leastInterval(char[] tasks, int n) {
