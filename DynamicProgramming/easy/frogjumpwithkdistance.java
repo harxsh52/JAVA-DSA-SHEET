@@ -1,0 +1,22 @@
+package DynamicProgramming.easy;
+
+public class frogjumpwithkdistance {
+    static int solveUtil(int n, int[] height, int[] dp, int k) {
+        dp[0] = 0;
+
+        // Loop through the array to fill in the dp array
+        for (int i = 1; i < n; i++) {
+            int mmSteps = Integer.MAX_VALUE;
+
+            // Loop to try all possible jumps from '1' to 'k'
+            for (int j = 1; j <= k; j++) {
+                if (i - j >= 0) {
+                    int jump = dp[i - j] + Math.abs(height[i] - height[i - j]);
+                    mmSteps = Math.min(jump, mmSteps);
+                }
+            }
+            dp[i] = mmSteps;
+        }
+        return dp[n - 1]; // The result is stored in the last element of dp
+    }
+}
