@@ -4,7 +4,7 @@ public class bbfs {
     
         public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int V=sc.nextInt();
+        int V=6;
         List<List<Integer>> graph=new ArrayList<>();
         for(int i=0;i<V;i++){
             graph.add(new ArrayList<>());
